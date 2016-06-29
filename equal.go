@@ -1,4 +1,4 @@
-package assert
+package equal
 
 import (
 	"fmt"
