@@ -49,6 +49,9 @@ func Tf(t *testing.T, result bool, format string, args ...interface{}) {
 }
 
 func Equal(t *testing.T, args ...interface{}) {
+	if t == nil {
+		t = &testing.T{}
+	}
 	length := len(args)
 	if length <= 1 {
 		return
